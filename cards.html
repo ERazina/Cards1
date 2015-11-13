@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.box1{
+width: 200px;
+height: 200px;	
+}
+
+.jack,.king,.ten,.queen,.ace{
+	position: absolute;
+	top: 100px;
+	left: 300px;	
+	transition: 0.5s ease-in ;
+}
+
+.queen{
+	z-index: 1000;
+}
+
+.jack, .king{
+z-index:500;	
+}
+
+.box1:hover .king {
+  transform: translate(90px,10px) rotateZ(10deg);
+}
+.box1:hover .jack {
+  transform: translate(-90px,10px) rotateZ(-10deg);
+}
+.box1:hover .ace {
+  transform: translate(180px,40px) rotateZ(20deg);
+}
+.box1:hover .ten {
+  transform: translate(-180px,40px) rotateZ(-20deg);
+}
+</style>
+
+</head>
+
+<body>
+<div class="box1">
+<img src="img/10.png" class="ten" alt=""/>
+  <img src="img/queen.png" class="queen" alt=""/>
+  <img src="img/jack.png" class="jack" alt=""/>
+  <img src="img/king.png" class="king" alt=""/>
+  <img src="img/ace.png" class="ace" alt=""/></div>
+</body>
+</html>
